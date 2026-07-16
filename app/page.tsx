@@ -358,9 +358,14 @@ const BODY_HTML = `
           <div><b>Location</b>Nigeria</div>
         </div>
         <div class="social-row">
-          <a class="social-btn" href="https://www.linkedin.com/in/caleb-andrew-omojowo-160a85295" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5c0-1.4 1-2.5 2.5-2.5S17 11.1 17 12.5V17"/></svg></a>
-          <a class="social-btn" href="https://github.com/cybercalebx" target="_blank" rel="noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.3-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
-          <a class="social-btn" href="mailto:Andrewcaleb608@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="m3 6 9 7 9-7"/></svg></a>
+          <a class="social-btn" href="https://www.linkedin.com/in/caleb-andrew-omojowo-160a85295" target="_blank" rel="noreferrer" aria-label="LinkedIn" title="Go to Caleb's LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5c0-1.4 1-2.5 2.5-2.5S17 11.1 17 12.5V17"/></svg></a>
+          <a class="social-btn" href="https://github.com/cybercalebx" target="_blank" rel="noreferrer" aria-label="GitHub" title="Go to Caleb's GitHub"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.3-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+          <a class="social-btn" href="mailto:Andrewcaleb608@gmail.com" aria-label="Email" title="Send Caleb an email"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="m3 6 9 7 9-7"/></svg></a>
+        </div>
+        <div class="link-row">
+          <a href="https://www.linkedin.com/in/caleb-andrew-omojowo-160a85295" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/cybercalebx" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="/Cybersecurity_Audit_Report_Pro.pdf" target="_blank" rel="noreferrer">Audit Report</a>
         </div>
       </div>
       <form class="reveal" id="contactForm">
