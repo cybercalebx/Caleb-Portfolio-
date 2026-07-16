@@ -377,45 +377,26 @@ const BODY_HTML = `
               <p>Start with one of the quick security questions below and I’ll respond fast.</p>
             </div>
           </div>
-          <div class="wa-prompts">
-            <div class="wa-group">
-              <h5>🔒 Security Audit</h5>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20can%20you%20perform%20a%20security%20audit%20for%20my%20website%3F" target="_blank" rel="noreferrer">Can you perform a security audit for my website?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20how%20secure%20is%20my%20web%20application%3F" target="_blank" rel="noreferrer">How secure is my web application?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20what%20vulnerabilities%20can%20you%20identify%20in%20my%20system%3F" target="_blank" rel="noreferrer">What vulnerabilities can you identify in my system?</a>
+          <div class="whatsapp-chat">
+            <div class="wa-chat-box">
+              <div class="wa-message wa-message-incoming">
+                <span class="wa-avatar" aria-hidden="true">👋</span>
+                <div>
+                  <strong>Visitor</strong>
+                  <p>Hello Caleb, I’d like a cybersecurity assessment for my website. When are you available?</p>
+                </div>
+              </div>
+              <div class="wa-message wa-message-outgoing">
+                <span class="wa-avatar" aria-hidden="true">✅</span>
+                <div>
+                  <strong>Caleb</strong>
+                  <p>Sure — I can review your website and share a security plan tailored to your needs.</p>
+                </div>
+              </div>
             </div>
-            <div class="wa-group">
-              <h5>🛡️ Penetration Testing</h5>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20can%20you%20conduct%20a%20penetration%20test%20on%20my%20website%3F" target="_blank" rel="noreferrer">Can you conduct a penetration test on my website?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20how%20vulnerable%20is%20my%20company%20to%20cyberattacks%3F" target="_blank" rel="noreferrer">How vulnerable is my company to cyberattacks?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20what%20are%20the%20most%20critical%20security%20risks%20in%20my%20infrastructure%3F" target="_blank" rel="noreferrer">What are the most critical security risks in my infrastructure?</a>
-            </div>
-            <div class="wa-group">
-              <h5>🌐 Web & Network Security</h5>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20how%20can%20I%20protect%20my%20website%20from%20hackers%3F" target="_blank" rel="noreferrer">How can I protect my website from hackers?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20can%20you%20help%20secure%20my%20company%E2%80%99s%20network%3F" target="_blank" rel="noreferrer">Can you help secure my company’s network?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20what%20security%20measures%20should%20I%20implement%20for%20my%20startup%3F" target="_blank" rel="noreferrer">What security measures should I implement for my startup?</a>
-            </div>
-            <div class="wa-group">
-              <h5>📊 Security Consulting</h5>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20what%20cybersecurity%20solutions%20do%20you%20recommend%20for%20my%20business%3F" target="_blank" rel="noreferrer">What cybersecurity solutions do you recommend for my business?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20how%20can%20I%20improve%20my%20organization%E2%80%99s%20security%20posture%3F" target="_blank" rel="noreferrer">How can I improve my organization’s security posture?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20do%20I%20need%20a%20cybersecurity%20assessment%3F" target="_blank" rel="noreferrer">Do I need a cybersecurity assessment?</a>
-            </div>
-            <div class="wa-group">
-              <h5>🚨 Incident Response</h5>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20my%20website%20was%20hacked.%20What%20should%20I%20do%3F" target="_blank" rel="noreferrer">My website was hacked. What should I do?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20I%20suspect%20a%20security%20breach.%20Can%20you%20help%3F" target="_blank" rel="noreferrer">I suspect a security breach. Can you help?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20how%20can%20I%20recover%20from%20a%20cyberattack%3F" target="_blank" rel="noreferrer">How can I recover from a cyberattack?</a>
-            </div>
-            <div class="wa-group">
-              <h5>💼 For Potential Clients</h5>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20what%20cybersecurity%20services%20do%20you%20offer%3F" target="_blank" rel="noreferrer">What cybersecurity services do you offer?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20can%20I%20see%20examples%20of%20your%20previous%20security%20projects%3F" target="_blank" rel="noreferrer">Can I see examples of your previous security projects?</a>
-              <a class="wa-chip" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20how%20much%20does%20a%20security%20audit%20cost%3F" target="_blank" rel="noreferrer">How much does a security audit cost?</a>
-            </div>
+            <p class="wa-chat-note">Tap the button below to start this conversation on WhatsApp.</p>
           </div>
-          <a class="btn btn-gold wa-button" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20I%27m%20interested%20in%20your%20cybersecurity%20services.%20Can%20we%20discuss%20my%20security%20requirements%3F" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+          <a class="btn btn-gold wa-button" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20I%27m%20interested%20in%20your%20cybersecurity%20services.%20Can%20we%20discuss%20my%20security%20requirements%3F" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24"><path d="M17.5 6.5c-1.3-1.4-3.1-2.2-5-2.2-4.1 0-7.5 3.4-7.5 7.5 0 1.3.3 2.5.8 3.6L3 21l4.7-1.2c1.1.6 2.3.9 3.5.9 4.1 0 7.5-3.4 7.5-7.5 0-1.9-.8-3.7-2.1-5z"/><path d="M15.45 14.8c-.15-.1-1-.5-1.16-.6-.15-.1-.26-.1-.37.1-.1.17-.45.5-.55.6-.1.1-.2.1-.36.03-.16-.1-.67-.3-1.27-.9-.47-.42-.79-.94-.88-1.1-.1-.2-.02-.3.07-.4.07-.1.16-.2.23-.3.08-.1.11-.15.16-.26.05-.1.03-.2-.01-.3-.05-.1-1.1-2.7-1.5-3.7-.4-1-.8-1.1-1-1.1h-.8c-.2 0-.5 0-.8.4-.3.4-1 1-1 2.5 0 1.5 1 3 1.1 3.2.1.1 1.9 3 4.7 4.2.7.3 1.3.4 1.8.4.7 0 1.4-.2 2-.4.6-.2 1.8-.8 2.1-1.5.2-.6.2-1.1.1-1.2-.05-.1-.35-.2-.75-.3z"/></svg>Chat on WhatsApp</a>
         </div>
       </div>
       <form class="reveal" id="contactForm">
