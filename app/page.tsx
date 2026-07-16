@@ -378,25 +378,31 @@ const BODY_HTML = `
             </div>
           </div>
           <div class="whatsapp-chat">
-            <div class="wa-chat-box">
-              <div class="wa-message wa-message-incoming">
-                <span class="wa-avatar" aria-hidden="true">👋</span>
-                <div>
-                  <strong>Visitor</strong>
-                  <p>Hello Caleb, I’d like a cybersecurity assessment for my website. When are you available?</p>
-                </div>
+            <div class="whatsapp-header">
+              <div class="wa-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.82 11.82 0 0 0 12 0C5.373 0 0 5.373 0 12a11.814 11.814 0 0 0 1.645 6.065L0 24l6.252-1.569A11.816 11.816 0 0 0 12 24c6.627 0 12-5.373 12-12 0-3.21-1.252-6.215-3.48-8.52z" fill="none"/><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.149-.668.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.497.099-.198.05-.372-.025-.52-.075-.148-.668-1.611-.915-2.205-.242-.579-.487-.5-.668-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.289.173-1.414-.074-.124-.272-.198-.57-.347z"/></svg>
               </div>
-              <div class="wa-message wa-message-outgoing">
-                <span class="wa-avatar" aria-hidden="true">✅</span>
-                <div>
-                  <strong>Caleb</strong>
-                  <p>Sure — I can review your website and share a security plan tailored to your needs.</p>
-                </div>
+              <div>
+                <b>WhatsApp AI Chat</b>
+                <p>Chat with Caleb’s cybersecurity assistant and continue the conversation on WhatsApp.</p>
               </div>
             </div>
-            <p class="wa-chat-note">Tap the button below to start this conversation on WhatsApp.</p>
+            <div class="wa-chat-window">
+              <div class="wa-message wa-message-bot">
+                <p>Hi! I’m your security AI assistant. Ask me anything about audits, penetration testing, or incident response.</p>
+              </div>
+              <div class="wa-message wa-message-user">
+                <p>Hello Caleb, I’d like a cybersecurity assessment for my website. When are you available?</p>
+              </div>
+              <div class="wa-message wa-message-bot wa-message-final">
+                <p>Absolutely — I can review your site, identify vulnerabilities, and deliver a customized security plan.</p>
+              </div>
+            </div>
+            <div class="wa-chat-input">
+              <input type="text" readonly placeholder="Type your security question..." />
+              <a class="btn btn-gold wa-button" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20I%27m%20interested%20in%20a%20cybersecurity%20assessment%20for%20my%20website.%20When%20are%20you%20available%3F" target="_blank" rel="noreferrer">Continue on WhatsApp</a>
+            </div>
           </div>
-          <a class="btn btn-gold wa-button" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20I%27m%20interested%20in%20your%20cybersecurity%20services.%20Can%20we%20discuss%20my%20security%20requirements%3F" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24"><path d="M17.5 6.5c-1.3-1.4-3.1-2.2-5-2.2-4.1 0-7.5 3.4-7.5 7.5 0 1.3.3 2.5.8 3.6L3 21l4.7-1.2c1.1.6 2.3.9 3.5.9 4.1 0 7.5-3.4 7.5-7.5 0-1.9-.8-3.7-2.1-5z"/><path d="M15.45 14.8c-.15-.1-1-.5-1.16-.6-.15-.1-.26-.1-.37.1-.1.17-.45.5-.55.6-.1.1-.2.1-.36.03-.16-.1-.67-.3-1.27-.9-.47-.42-.79-.94-.88-1.1-.1-.2-.02-.3.07-.4.07-.1.16-.2.23-.3.08-.1.11-.15.16-.26.05-.1.03-.2-.01-.3-.05-.1-1.1-2.7-1.5-3.7-.4-1-.8-1.1-1-1.1h-.8c-.2 0-.5 0-.8.4-.3.4-1 1-1 2.5 0 1.5 1 3 1.1 3.2.1.1 1.9 3 4.7 4.2.7.3 1.3.4 1.8.4.7 0 1.4-.2 2-.4.6-.2 1.8-.8 2.1-1.5.2-.6.2-1.1.1-1.2-.05-.1-.35-.2-.75-.3z"/></svg>Chat on WhatsApp</a>
         </div>
       </div>
       <form class="reveal" id="contactForm">
