@@ -367,43 +367,6 @@ const BODY_HTML = `
           <a href="https://github.com/cybercalebx" target="_blank" rel="noreferrer">GitHub</a>
           <a href="/Cybersecurity_Audit_Report_Pro.pdf" target="_blank" rel="noreferrer">Audit Report</a>
         </div>
-        <div class="whatsapp-card">
-          <div class="whatsapp-head">
-            <div class="whatsapp-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M17.5 6.5c-1.3-1.4-3.1-2.2-5-2.2-4.1 0-7.5 3.4-7.5 7.5 0 1.3.3 2.5.8 3.6L3 21l4.7-1.2c1.1.6 2.3.9 3.5.9 4.1 0 7.5-3.4 7.5-7.5 0-1.9-.8-3.7-2.1-5z"/><path d="M15.5 14.5c-.2-.1-1.3-.6-1.5-.6-.2 0-.3 0-.5.2-.3.2-.8.5-1.2.5-.3 0-.5-.1-.7-.2-.8-.4-1.4-1.3-1.6-1.6-.2-.3 0-.5.1-.7.1-.1.2-.2.3-.4.1-.2.1-.4 0-.6-.1-.1-1.1-2.7-1.5-3.7-.4-1-.8-1.1-1-1.1h-.8c-.2 0-.5 0-.8.4-.3.4-1 1-1 2.5 0 1.5 1 3 1.1 3.2.1.1 1.9 3 4.7 4.2.7.3 1.3.4 1.8.4.7 0 1.4-.2 2-.4.6-.2 1.8-.8 2.1-1.5.2-.6.2-1.1.1-1.2-.1-.1-.4-.2-.8-.3z"/></svg>
-            </div>
-            <div>
-              <b>Need help? Ask me on WhatsApp:</b>
-              <p>Start with one of the quick security questions below and I’ll respond fast.</p>
-            </div>
-          </div>
-          <div class="whatsapp-chat">
-            <div class="whatsapp-header">
-              <div class="wa-icon" aria-hidden="true">
-                <svg viewBox="0 0 24 24"><path d="M20.52 3.48A11.82 11.82 0 0 0 12 0C5.373 0 0 5.373 0 12a11.814 11.814 0 0 0 1.645 6.065L0 24l6.252-1.569A11.816 11.816 0 0 0 12 24c6.627 0 12-5.373 12-12 0-3.21-1.252-6.215-3.48-8.52z" fill="none"/><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.272-.099-.47-.149-.668.149-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.075-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.173.198-.297.298-.497.099-.198.05-.372-.025-.52-.075-.148-.668-1.611-.915-2.205-.242-.579-.487-.5-.668-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.148.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.693.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.289.173-1.414-.074-.124-.272-.198-.57-.347z"/></svg>
-              </div>
-              <div>
-                <b>WhatsApp AI Chat</b>
-                <p>Chat with Caleb’s cybersecurity assistant and continue the conversation on WhatsApp.</p>
-              </div>
-            </div>
-            <div class="wa-chat-window">
-              <div class="wa-message wa-message-bot">
-                <p>Hi! I’m your security AI assistant. Ask me anything about audits, penetration testing, or incident response.</p>
-              </div>
-              <div class="wa-message wa-message-user">
-                <p>Hello Caleb, I’d like a cybersecurity assessment for my website. When are you available?</p>
-              </div>
-              <div class="wa-message wa-message-bot wa-message-final">
-                <p>Absolutely — I can review your site, identify vulnerabilities, and deliver a customized security plan.</p>
-              </div>
-            </div>
-            <div class="wa-chat-input">
-              <input type="text" readonly placeholder="Type your security question..." />
-              <a class="btn btn-gold wa-button" href="https://api.whatsapp.com/send?phone=2349063155041&text=Hi%20Caleb%2C%20I%27m%20interested%20in%20a%20cybersecurity%20assessment%20for%20my%20website.%20When%20are%20you%20available%3F" target="_blank" rel="noreferrer">Continue on WhatsApp</a>
-            </div>
-          </div>
-        </div>
       </div>
       <form class="reveal" id="contactForm">
         <div class="form-row">
@@ -428,6 +391,27 @@ const BODY_HTML = `
 
 <button id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
 <div class="toast" id="toast"><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg><span id="toastMsg"></span></div>
+
+<!-- FLOATING WIDGETS -->
+<a href="https://wa.me/2349063155041" target="_blank" rel="noopener noreferrer" id="waBtn" aria-label="Chat on WhatsApp" style="position:fixed;bottom:24px;right:24px;width:56px;height:56px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.3);z-index:999;">
+  <svg viewBox="0 0 24 24" width="30" height="30" fill="#fff"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.7.44 3.36 1.28 4.82L2 22l5.42-1.42a9.9 9.9 0 0 0 4.62 1.18h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0 0 12.04 2zm5.79 14.05c-.24.68-1.4 1.3-1.93 1.38-.49.08-1.11.11-1.8-.11-.41-.13-.94-.3-1.62-.6-2.85-1.23-4.71-4.1-4.85-4.29-.14-.19-1.16-1.54-1.16-2.94 0-1.4.73-2.09 1-2.37.24-.27.53-.34.71-.34h.5c.16 0 .38-.03.58.44.24.58.83 2 .9 2.14.07.14.11.31.02.5-.09.19-.14.3-.27.46-.14.16-.29.36-.41.48-.14.14-.28.29-.12.56.16.28.71 1.17 1.53 1.9 1.05.94 1.94 1.23 2.21 1.37.28.14.44.12.6-.06.16-.18.68-.79.86-1.06.18-.28.36-.23.6-.14.24.09 1.55.73 1.82.86.27.14.44.2.51.31.07.11.07.65-.16 1.33z"/></svg>
+</a>
+
+<button id="chatToggle" aria-label="Open chatbot" style="position:fixed;bottom:92px;right:24px;width:56px;height:56px;border-radius:50%;background:var(--gold,#d4af37);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(0,0,0,.3);z-index:999;border:none;cursor:pointer;">
+  <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="#0b0b0b" stroke-width="2"><path d="M21 12c0 4-3.8 7-8.5 7-1 0-2-.1-2.9-.4L4 20l1.3-3.9C4.5 15 4 13.6 4 12c0-4 3.8-7 8.5-7S21 8 21 12z"/></svg>
+</button>
+
+<div id="chatWindow" style="display:none;position:fixed;bottom:160px;right:24px;width:320px;max-width:calc(100vw - 48px);height:420px;background:#111;border:1px solid rgba(212,175,55,.3);border-radius:16px;box-shadow:0 8px 32px rgba(0,0,0,.5);z-index:1000;flex-direction:column;overflow:hidden;">
+  <div style="padding:14px 16px;background:rgba(212,175,55,.1);border-bottom:1px solid rgba(212,175,55,.2);display:flex;justify-content:space-between;align-items:center;">
+    <span style="color:#fff;font-weight:600;font-size:14px;">Ask Caleb's Assistant</span>
+    <button id="chatClose" aria-label="Close chat" style="background:none;border:none;color:#aaa;font-size:20px;cursor:pointer;line-height:1;">&times;</button>
+  </div>
+  <div id="chatMessages" style="flex:1;overflow-y:auto;padding:14px 16px;display:flex;flex-direction:column;gap:10px;font-size:13.5px;"></div>
+  <div style="padding:10px;border-top:1px solid rgba(212,175,55,.2);display:flex;gap:8px;">
+    <input id="chatInput" type="text" placeholder="Ask about skills, projects..." style="flex:1;background:#1a1a1a;border:1px solid rgba(255,255,255,.1);border-radius:8px;padding:8px 10px;color:#fff;font-size:13px;outline:none;">
+    <button id="chatSend" aria-label="Send" style="background:var(--gold,#d4af37);border:none;border-radius:8px;padding:8px 12px;cursor:pointer;color:#0b0b0b;font-weight:600;">Send</button>
+  </div>
+</div>
 
 `;
 
@@ -607,12 +591,92 @@ export default function Home() {
       });
     });
 
+    // FAQ chatbot
+    const chatToggle = document.getElementById('chatToggle');
+    const chatWindow = document.getElementById('chatWindow');
+    const chatClose = document.getElementById('chatClose');
+    const chatMessages = document.getElementById('chatMessages');
+    const chatInput = document.getElementById('chatInput') as HTMLInputElement | null;
+    const chatSend = document.getElementById('chatSend');
+
+    const faqRules: { k: string[]; a: string }[] = [
+      { k: ['project', 'apa', 'shield'], a: "Caleb's featured projects are APA Shield (an email threat detection & phishing scanner) and Darl Empire (a luxury hair & lashes e-commerce platform). Check the Projects section above for live links and GitHub repos!" },
+      { k: ['darl', 'empire', 'ecommerce', 'e-commerce', 'shop'], a: 'Darl Empire is a Next.js e-commerce site for luxury hair & lashes, with a Neon/Postgres backend and automated order emails. You can view it live from the Projects section.' },
+      { k: ['skill', 'stack', 'tech', 'tools'], a: 'Caleb works with security tools like Nmap, Metasploit, Burp Suite, and Wireshark, plus web dev tools like Next.js, React, JavaScript, and Tailwind CSS.' },
+      { k: ['cert', 'education', 'learn', 'academy', 'study'], a: 'Caleb is currently pursuing a TS Academy Cybersecurity Certification, alongside Google Cybersecurity Professional Certificate, TryHackMe paths, and continuous hands-on labs.' },
+      { k: ['report', 'audit'], a: "You can view Caleb's Cybersecurity Audit Report in the Audit Reports section — it covers risk assessment, control evaluation, and compliance review." },
+      { k: ['contact', 'hire', 'email', 'reach', 'whatsapp'], a: 'You can reach Caleb at Andrewcaleb608@gmail.com, via the WhatsApp button in the corner, or through the contact form on this page!' },
+      { k: ['linkedin'], a: "Here's Caleb's LinkedIn: https://www.linkedin.com/in/caleb-andrew-omojowo-160a85295" },
+      { k: ['github'], a: "Here's Caleb's GitHub: https://github.com/cybercalebx" },
+      { k: ['hello', 'hi', 'hey'], a: "Hey there! I'm a simple FAQ assistant. Ask me about Caleb's projects, skills, certifications, or how to get in touch." },
+    ];
+    function faqReply(msg: string) {
+      const m = msg.toLowerCase();
+      for (const rule of faqRules) {
+        if (rule.k.some((kw) => m.includes(kw))) return rule.a;
+      }
+      return "I'm just a simple FAQ bot, so I might not have that answer — try asking about projects, skills, certifications, or contact info. For anything else, reach out directly via email or WhatsApp!";
+    }
+    function addChatMsg(text: string, from: 'user' | 'bot') {
+      if (!chatMessages) return;
+      const bubble = document.createElement('div');
+      bubble.textContent = text;
+      bubble.style.maxWidth = '85%';
+      bubble.style.padding = '8px 12px';
+      bubble.style.borderRadius = '10px';
+      bubble.style.lineHeight = '1.4';
+      if (from === 'user') {
+        bubble.style.alignSelf = 'flex-end';
+        bubble.style.background = 'var(--gold,#d4af37)';
+        bubble.style.color = '#0b0b0b';
+      } else {
+        bubble.style.alignSelf = 'flex-start';
+        bubble.style.background = '#222';
+        bubble.style.color = '#eee';
+      }
+      chatMessages.appendChild(bubble);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+    let chatOpened = false;
+    function handleChatToggle() {
+      if (!chatWindow) return;
+      const isOpen = chatWindow.style.display === 'flex';
+      chatWindow.style.display = isOpen ? 'none' : 'flex';
+      if (!isOpen && !chatOpened) {
+        chatOpened = true;
+        addChatMsg("Hi! I'm Caleb's assistant. Ask me about his projects, skills, certifications, or how to get in touch.", 'bot');
+      }
+    }
+    function handleChatClose() {
+      if (chatWindow) chatWindow.style.display = 'none';
+    }
+    function sendChat() {
+      if (!chatInput) return;
+      const val = chatInput.value.trim();
+      if (!val) return;
+      addChatMsg(val, 'user');
+      chatInput.value = '';
+      setTimeout(() => addChatMsg(faqReply(val), 'bot'), 400);
+    }
+    function handleChatKeydown(e: KeyboardEvent) {
+      if (e.key === 'Enter') sendChat();
+    }
+    chatToggle?.addEventListener('click', handleChatToggle);
+    chatClose?.addEventListener('click', handleChatClose);
+    chatSend?.addEventListener('click', sendChat);
+    chatInput?.addEventListener('keydown', handleChatKeydown);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('load', hideLoader);
+      chatToggle?.removeEventListener('click', handleChatToggle);
+      chatClose?.removeEventListener('click', handleChatClose);
+      chatSend?.removeEventListener('click', sendChat);
+      chatInput?.removeEventListener('keydown', handleChatKeydown);
     };
   }, []);
 
   return <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />;
 }
+
 
