@@ -204,8 +204,24 @@ const BODY_HTML = `
           <li><svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>Security Risk Reporting</li>
         </ul>
         <div class="btn-row">
-          <a href="#" class="btn btn-gold">View Case Study <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-          <a href="#" class="btn btn-outline">GitHub Repository</a>
+          <a href="https://apa-shield.vercel.app" class="btn btn-gold" target="_blank" rel="noreferrer">Open App</a>
+          <a href="https://github.com/cybercalebx/Apa-shield-" class="btn btn-outline" target="_blank" rel="noreferrer">GitHub Repository</a>
+        </div>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-mock">
+        <div class="tag mono"><svg width="10" height="10" viewBox="0 0 24 24" style="stroke:var(--gold);fill:none;stroke-width:2.5"><path d="m8 12 3 3 5-6"/></svg>live site</div>
+        <div class="fake-row"><span>darl-empire.vercel.app</span><span style="color:var(--safe)">Live</span></div>
+        <div class="fake-row"><span>Modern landing page</span><span style="color:var(--gold)">Web development</span></div>
+      </div>
+      <div class="project-body">
+        <h3>Darl Empire</h3>
+        <div class="sub">Website Development Project</div>
+        <p>Darl Empire is a website development project demonstrating responsive design, clean branding, and an engaging user experience for digital audiences.</p>
+        <div class="btn-row">
+          <a href="https://darl-empire.vercel.app" class="btn btn-gold" target="_blank" rel="noreferrer">Open App</a>
+          <a href="https://github.com/cybercalebx/Darl--empire-" class="btn btn-outline" target="_blank" rel="noreferrer">GitHub Repository</a>
         </div>
       </div>
     </div>
@@ -220,41 +236,16 @@ const BODY_HTML = `
       <h2>Security Assessments &amp; Technical Reviews</h2>
       <p>A collection of cybersecurity assessments, security research, vulnerability analysis exercises, and practical security review projects completed as part of ongoing learning and professional development.</p>
     </div>
-    <div class="filter-row mono">
-      <button class="pill active" data-filter="all">All</button>
-      <button class="pill" data-filter="web">Web</button>
-      <button class="pill" data-filter="email">Email</button>
-      <button class="pill" data-filter="network">Network</button>
-      <button class="pill" data-filter="research">Research</button>
-    </div>
     <div class="grid-4" id="reportGrid">
       <div class="report-card reveal" data-cat="web">
         <div class="report-icon"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18"/></svg></div>
         <h4>Web Application Security Review</h4>
         <ul><li>Vulnerability Assessment</li><li>OWASP Top 10 Analysis</li><li>Security Recommendations</li><li>Risk Evaluation</li></ul>
-        <div class="report-actions"><a href="#" class="btn btn-gold">View Report</a><a href="#" class="btn btn-ghost"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a></div>
-      </div>
-      <div class="report-card reveal" data-cat="email">
-        <div class="report-icon"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="m3 6 9 7 9-7"/></svg></div>
-        <h4>Email Security Assessment</h4>
-        <ul><li>Phishing Detection</li><li>Email Header Analysis</li><li>Threat Identification</li><li>Security Reporting</li></ul>
-        <div class="report-actions"><a href="#" class="btn btn-gold">View Report</a><a href="#" class="btn btn-ghost"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a></div>
-      </div>
-      <div class="report-card reveal" data-cat="network">
-        <div class="report-icon"><svg viewBox="0 0 24 24"><circle cx="6" cy="6" r="2.4"/><circle cx="18" cy="6" r="2.4"/><circle cx="12" cy="18" r="2.4"/><path d="M8 7.3 11 16M16 7.3 13 16M8.4 6h7.2"/></svg></div>
-        <h4>Network Security Review</h4>
-        <ul><li>Port Enumeration</li><li>Service Analysis</li><li>Exposure Assessment</li><li>Security Recommendations</li></ul>
-        <div class="report-actions"><a href="#" class="btn btn-gold">View Report</a><a href="#" class="btn btn-ghost"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a></div>
-      </div>
-      <div class="report-card reveal" data-cat="research">
-        <div class="report-icon"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
-        <h4>Security Research Reports</h4>
-        <ul><li>Threat Analysis</li><li>Security Findings</li><li>Mitigation Strategies</li><li>Technical Documentation</li></ul>
-        <div class="report-actions"><a href="#" class="btn btn-gold">View Report</a><a href="#" class="btn btn-ghost"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a></div>
+        <div class="report-actions"><a href="/Cybersecurity_Audit_Report_Pro.pdf" class="btn btn-gold" target="_blank" rel="noreferrer">View Report</a><a href="https://github.com/cybercalebx/Apa-shield-" class="btn btn-ghost" target="_blank" rel="noreferrer"><svg viewBox="0 0 24 24" width="13" height="13"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg></a></div>
       </div>
     </div>
   </div>
-</section>
+</section> 
 
 <!-- HANDS-ON LABS -->
 <section class="section" id="labs">
@@ -312,7 +303,7 @@ const BODY_HTML = `
     <div class="edu-grid">
       <div class="edu-card reveal" style="grid-column:1/-1;">
         <svg viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>
-        <div><h5>B.Sc. Computer Science (In View)</h5><span>Formal degree in progress</span></div>
+        <div><h5>TS Academy Certification (In Progress)</h5><span>Cybersecurity certification in progress</span></div>
       </div>
       <div class="edu-card reveal"><svg viewBox="0 0 24 24"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 9.9 4.6-1.2 8-4.9 8-9.9V5l-8-3z"/></svg><div><h5>Google Cybersecurity Professional Certificate</h5><span>Continuous learning</span></div></div>
       <div class="edu-card reveal"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg><div><h5>TryHackMe Learning Paths</h5><span>Continuous learning</span></div></div>
@@ -367,8 +358,8 @@ const BODY_HTML = `
           <div><b>Location</b>Nigeria</div>
         </div>
         <div class="social-row">
-          <a class="social-btn" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5c0-1.4 1-2.5 2.5-2.5S17 11.1 17 12.5V17"/></svg></a>
-          <a class="social-btn" href="#" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.3-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
+          <a class="social-btn" href="https://www.linkedin.com/in/caleb-andrew-omojowo-160a85295" target="_blank" rel="noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M7 10v7M7 7v.01M12 17v-4.5c0-1.4 1-2.5 2.5-2.5S17 11.1 17 12.5V17"/></svg></a>
+          <a class="social-btn" href="https://github.com/cybercalebx" target="_blank" rel="noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.3-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
           <a class="social-btn" href="mailto:Andrewcaleb608@gmail.com" aria-label="Email"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="m3 6 9 7 9-7"/></svg></a>
         </div>
       </div>
@@ -400,189 +391,184 @@ const BODY_HTML = `
 
 export default function Home() {
   useEffect(() => {
+    const hideLoader = () => {
+      const loaderEl = document.getElementById('loader');
+      if (loaderEl) setTimeout(() => loaderEl.classList.add('hide'), 500);
+    };
 
-// loader
-const hideLoader = () => {
-  const loaderEl = document.getElementById('loader');
-  if (loaderEl) setTimeout(() => loaderEl.classList.add('hide'), 500);
-};
-if (document.readyState === 'complete') {
-  hideLoader();
-} else {
-  window.addEventListener('load', hideLoader);
-}
-
-// theme toggle
-const themeToggle = document.getElementById('themeToggle');
-if (themeToggle) {
-  themeToggle.addEventListener('click', () => {
-    const root = document.documentElement;
-    root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
-  });
-}
-
-// mobile nav
-const burger = document.getElementById('burger');
-const mobileNav = document.getElementById('mobileNav');
-if (burger && mobileNav) {
-  burger.addEventListener('click', () => mobileNav.classList.toggle('open'));
-  mobileNav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => mobileNav.classList.remove('open')));
-}
-
-// scroll progress + back to top + active nav
-const progress = document.getElementById('progress');
-const toTop = document.getElementById('toTop');
-const navA = document.querySelectorAll<HTMLAnchorElement>('.nav-links a');
-const sections = Array.from(document.querySelectorAll<HTMLElement>('section[id]'));
-window.addEventListener('scroll', () => {
-  const h = document.documentElement;
-  const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
-  if (progress) progress.style.width = scrolled + '%';
-  if (toTop) toTop.classList.toggle('show', h.scrollTop > 500);
-
-  let current = '';
-  sections.forEach((s) => {
-    if (h.scrollTop >= s.offsetTop - 140) current = s.id;
-  });
-  navA.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
-});
-if (toTop) {
-  toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-}
-
-// reveal on scroll
-const io = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        (e.target as HTMLElement).classList.add('in');
-        io.unobserve(e.target);
-      }
-    });
-  },
-  { threshold: 0.15 }
-);
-document.querySelectorAll<HTMLElement>('.reveal').forEach((el) => io.observe(el));
-
-// animated stat counters
-const statIO = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        const el = e.target as HTMLElement;
-        const target = Number(el.dataset.target) || 0;
-        let cur = 0;
-        const step = Math.max(1, Math.round(target / 40));
-        const t = setInterval(() => {
-          cur += step;
-          if (cur >= target) {
-            cur = target;
-            clearInterval(t);
-          }
-          el.textContent = cur + (target === 100 ? '%' : '+');
-        }, 30);
-        statIO.unobserve(el);
-      }
-    });
-  },
-  { threshold: 0.4 }
-);
-document.querySelectorAll<HTMLElement>('.stat-num').forEach((el) => statIO.observe(el));
-
-// animated skill bars
-const skillIO = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => {
-      if (e.isIntersecting) {
-        const row = e.target as HTMLElement;
-        const pct = row.dataset.p;
-        const bar = row.querySelector<HTMLElement>('.bar i');
-        if (pct && bar) {
-          bar.style.width = pct + '%';
-        }
-        skillIO.unobserve(row);
-      }
-    });
-  },
-  { threshold: 0.3 }
-);
-document.querySelectorAll<HTMLElement>('.skill-row').forEach((el) => skillIO.observe(el));
-
-// report filter
-document.querySelectorAll<HTMLElement>('.pill').forEach((btn) => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll<HTMLElement>('.pill').forEach((p) => p.classList.remove('active'));
-    btn.classList.add('active');
-    const f = btn.dataset.filter;
-    document.querySelectorAll<HTMLElement>('.report-card').forEach((card) => {
-      card.style.display = f === 'all' || card.dataset.cat === f ? '' : 'none';
-    });
-  });
-});
-
-// terminal typing animation
-const termLines = [
-  { p: 'whoami', v: 'Caleb Andrew Omojowo' },
-  { p: 'role', v: 'Cybersecurity Analyst\nWeb Developer' },
-  { p: 'focus', v: 'Security\nInnovation\nContinuous Learning' },
-  { p: 'mission', v: 'Secure systems.\nBuild solutions.\nCreate impact.' }
-];
-const termBody = document.getElementById('termBody') as HTMLDivElement | null;
-async function typeTerminal() {
-  if (!termBody) return;
-  termBody.innerHTML = '';
-  for (const line of termLines) {
-    const pEl = document.createElement('div');
-    pEl.innerHTML = '<span class="p">&gt; ' + line.p + '</span>';
-    termBody.appendChild(pEl);
-    const vEl = document.createElement('div');
-    vEl.style.marginBottom = '10px';
-    termBody.appendChild(vEl);
-    const text = line.v;
-    for (let i = 0; i <= text.length; i++) {
-      vEl.textContent = text.slice(0, i).replace(/\n/g, '\n');
-      vEl.innerHTML = text.slice(0, i).split('\n').join('<br>');
-      await new Promise((r) => setTimeout(r, 16));
+    if (document.readyState === 'complete') {
+      hideLoader();
+    } else {
+      window.addEventListener('load', hideLoader);
     }
-    await new Promise((r) => setTimeout(r, 350));
-  }
-  const cursorLine = document.createElement('div');
-  cursorLine.innerHTML = '<span class="p">&gt;</span> <span class="cursor"></span>';
-  termBody.appendChild(cursorLine);
-  await new Promise((r) => setTimeout(r, 2600));
-  typeTerminal();
-}
-if (termBody) typeTerminal();
 
-// contact form (preview only)
-const form = document.getElementById('contactForm') as HTMLFormElement | null;
-const toast = document.getElementById('toast') as HTMLElement | null;
-const toastMsg = document.getElementById('toastMsg') as HTMLElement | null;
-if (form && toast && toastMsg) {
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    toastMsg.textContent = 'Message ready — connect a backend to actually send it.';
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 3200);
-    form.reset();
-  });
-}
+    const themeToggle = document.getElementById('themeToggle');
+    if (themeToggle) {
+      themeToggle.addEventListener('click', () => {
+        const root = document.documentElement;
+        root.setAttribute('data-theme', root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+      });
+    }
 
-// CV buttons (no file attached yet)
-const cvButtons = [
-  document.getElementById('cvBtn'),
-  document.getElementById('cvBtn2')
-] as Array<HTMLAnchorElement | null>;
-cvButtons.forEach((btn) => {
-  if (!btn || !toast || !toastMsg) return;
-  btn.addEventListener('click', (e) => {
-    e.preventDefault();
-    toastMsg.textContent = 'Add your CV file to this project and link it here.';
-    toast.classList.add('show');
-    setTimeout(() => toast.classList.remove('show'), 3200);
-  });
-});
+    const burger = document.getElementById('burger');
+    const mobileNav = document.getElementById('mobileNav');
+    if (burger && mobileNav) {
+      burger.addEventListener('click', () => mobileNav.classList.toggle('open'));
+      mobileNav.querySelectorAll('a').forEach((a) => a.addEventListener('click', () => mobileNav.classList.remove('open')));
+    }
 
+    const progress = document.getElementById('progress');
+    const toTop = document.getElementById('toTop');
+    const navA = document.querySelectorAll('.nav-links a');
+    const sections = Array.from(document.querySelectorAll<HTMLElement>('section[id]'));
+
+    const handleScroll = () => {
+      if (!progress || !toTop) return;
+      const h = document.documentElement;
+      const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
+      progress.style.width = scrolled + '%';
+      toTop.classList.toggle('show', h.scrollTop > 500);
+
+      let current = '';
+      sections.forEach((s) => {
+        if (h.scrollTop >= s.offsetTop - 140) current = s.id;
+      });
+      navA.forEach((a) => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    if (toTop) {
+      toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    }
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            const target = e.target as HTMLElement;
+            target.classList.add('in');
+            io.unobserve(target);
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+    document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+
+    const statIO = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            const el = e.target as HTMLElement;
+            const target = Number(el.dataset.target ?? '0');
+            let cur = 0;
+            const step = Math.max(1, Math.round(target / 40));
+            const t = setInterval(() => {
+              cur += step;
+              if (cur >= target) {
+                cur = target;
+                clearInterval(t);
+              }
+              el.textContent = cur + (target === 100 ? '%' : '+');
+            }, 30);
+            statIO.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+    document.querySelectorAll('.stat-num').forEach((el) => statIO.observe(el));
+
+    const skillIO = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            const row = e.target as HTMLElement;
+            const pct = row.dataset.p ?? '0';
+            const bar = row.querySelector('.bar i') as HTMLElement | null;
+            if (bar) bar.style.width = pct + '%';
+            skillIO.unobserve(row);
+          }
+        });
+      },
+      { threshold: 0.3 }
+    );
+    document.querySelectorAll('.skill-row').forEach((el) => skillIO.observe(el));
+
+    document.querySelectorAll<HTMLElement>('.pill').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll<HTMLElement>('.pill').forEach((p) => p.classList.remove('active'));
+        btn.classList.add('active');
+        const f = btn.dataset.filter;
+        document.querySelectorAll<HTMLElement>('.report-card').forEach((cardEl) => {
+          cardEl.style.display = f === 'all' || cardEl.dataset.cat === f ? '' : 'none';
+        });
+      });
+    });
+
+    const termLines = [
+      { p: 'whoami', v: 'Caleb Andrew Omojowo' },
+      { p: 'role', v: 'Cybersecurity Analyst\nWeb Developer' },
+      { p: 'focus', v: 'Security\nInnovation\nContinuous Learning' },
+      { p: 'mission', v: 'Secure systems.\nBuild solutions.\nCreate impact.' },
+    ];
+    const termBody = document.getElementById('termBody');
+
+    async function typeTerminal() {
+      if (!termBody) return;
+      termBody.innerHTML = '';
+      for (const line of termLines) {
+        const pEl = document.createElement('div');
+        pEl.innerHTML = '<span class="p">&gt; ' + line.p + '</span>';
+        termBody.appendChild(pEl);
+        const vEl = document.createElement('div');
+        vEl.style.marginBottom = '10px';
+        termBody.appendChild(vEl);
+        const text = line.v;
+        for (let i = 0; i <= text.length; i++) {
+          vEl.textContent = text.slice(0, i).replace(/\n/g, '\n');
+          vEl.innerHTML = text.slice(0, i).split('\n').join('<br>');
+          await new Promise((r) => setTimeout(r, 16));
+        }
+        await new Promise((r) => setTimeout(r, 350));
+      }
+      const cursorLine = document.createElement('div');
+      cursorLine.innerHTML = '<span class="p">&gt;</span> <span class="cursor"></span>';
+      termBody.appendChild(cursorLine);
+      await new Promise((r) => setTimeout(r, 2600));
+      typeTerminal();
+    }
+    typeTerminal();
+
+    const form = document.getElementById('contactForm');
+    const toast = document.getElementById('toast');
+    const toastMsg = document.getElementById('toastMsg');
+
+    if (form && toast && toastMsg) {
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        toastMsg.textContent = 'Message ready — connect a backend to actually send it.';
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3200);
+        (form as HTMLFormElement).reset();
+      });
+    }
+
+    const cvButtons = [document.getElementById('cvBtn'), document.getElementById('cvBtn2')];
+    cvButtons.forEach((btn) => {
+      if (!btn || !toast || !toastMsg) return;
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        toastMsg.textContent = 'Add your CV file to this project and link it here.';
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 3200);
+      });
+    });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('load', hideLoader);
+    };
   }, []);
 
   return <div dangerouslySetInnerHTML={{ __html: BODY_HTML }} />;
