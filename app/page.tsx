@@ -362,21 +362,16 @@ const BODY_HTML = `
           <a class="social-btn" href="https://github.com/cybercalebx" target="_blank" rel="noreferrer" aria-label="GitHub" title="Go to Caleb's GitHub"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.3-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.5-1.3.1-2.7 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .6 1.4.2 2.4.1 2.7.6.7 1 1.6 1 2.7 0 3.9-2.3 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg></a>
           <a class="social-btn" href="mailto:Andrewcaleb608@gmail.com" aria-label="Email" title="Send Caleb an email"><svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z"/><path d="m3 6 9 7 9-7"/></svg></a>
         </div>
-        <div class="link-row">
-          <a href="https://www.linkedin.com/in/caleb-andrew-omojowo-160a85295" target="_blank" rel="noreferrer">LinkedIn</a>
-          <a href="https://github.com/cybercalebx" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="/Cybersecurity_Audit_Report_Pro.pdf" target="_blank" rel="noreferrer">Audit Report</a>
-        </div>
+        
       </div>
       <form class="reveal" id="contactForm">
         <div class="form-row">
-          <div class="field"><label>Name</label><input type="text" required placeholder="Your name"></div>
-          <div class="field"><label>Email</label><input type="email" required placeholder="you@email.com"></div>
+          <div class="field"><label>Name</label><input name="name" type="text" required placeholder="Your name"></div>
+          <div class="field"><label>Email</label><input name="email" type="email" required placeholder="you@email.com"></div>
         </div>
-        <div class="field"><label>Subject</label><input type="text" required placeholder="What's this about?"></div>
-        <div class="field"><label>Message</label><textarea required placeholder="Tell me a bit about it..."></textarea></div>
+        <div class="field"><label>Subject</label><input name="subject" type="text" required placeholder="What's this about?"></div>
+        <div class="field"><label>Message</label><textarea name="message" required placeholder="Tell me a bit about it..."></textarea></div>
         <button type="submit" class="btn btn-gold">Send Message <svg viewBox="0 0 24 24"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
-        <p class="form-note">This form is a live preview — wire it to an email service (e.g. Resend, Formspree) to receive messages.</p>
       </form>
     </div>
   </div>
@@ -571,12 +566,36 @@ export default function Home() {
     const toastMsg = document.getElementById('toastMsg');
 
     if (form && toast && toastMsg) {
-      form.addEventListener('submit', (e) => {
+      form.addEventListener('submit', async (e) => {
         e.preventDefault();
-        toastMsg.textContent = 'Message ready — connect a backend to actually send it.';
-        toast.classList.add('show');
+        const f = form as HTMLFormElement;
+        const fd = new FormData(f);
+        const payload = {
+          name: fd.get('name'),
+          email: fd.get('email'),
+          subject: fd.get('subject'),
+          message: fd.get('message'),
+        };
+        try {
+          const res = await fetch('/api/contact', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          });
+          if (res.ok) {
+            toastMsg.textContent = 'Message sent — thank you!';
+            toast.classList.add('show');
+            f.reset();
+          } else {
+            const json = await res.json().catch(() => ({}));
+            toastMsg.textContent = json?.error || 'Failed to send message';
+            toast.classList.add('show');
+          }
+        } catch (err) {
+          toastMsg.textContent = 'Failed to send message';
+          toast.classList.add('show');
+        }
         setTimeout(() => toast.classList.remove('show'), 3200);
-        (form as HTMLFormElement).reset();
       });
     }
 
@@ -609,6 +628,9 @@ export default function Home() {
       { k: ['linkedin'], a: "Here's Caleb's LinkedIn: https://www.linkedin.com/in/caleb-andrew-omojowo-160a85295" },
       { k: ['github'], a: "Here's Caleb's GitHub: https://github.com/cybercalebx" },
       { k: ['hello', 'hi', 'hey'], a: "Hey there! I'm a simple FAQ assistant. Ask me about Caleb's projects, skills, certifications, or how to get in touch." },
+      { k: ['cv', 'resume', 'curriculum', 'vitae'], a: "Caleb's CV can be downloaded from the site when available — contact him directly for a copy or check the Projects/Reports sections." },
+      { k: ['availability', 'hire', 'contract', 'open'], a: "Caleb is open to cybersecurity engagements and web development projects — reach out via the contact form or email to discuss availability." },
+      { k: ['rates', 'pricing', 'budget'], a: "Rates depend on scope — email with project details and Caleb can provide a tailored quote." },
     ];
     function faqReply(msg: string) {
       const m = msg.toLowerCase();
